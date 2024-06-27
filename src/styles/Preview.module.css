@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cardwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 60em;
+    margin-bottom: 1em;
+    padding: 2em;
+    
+}
+.contentwrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+    .card {
+        width: 85%;
+    }
+}
+#title {
+    font-size: 2em;
+}
+@media screen and (min-width: 376px) and (max-width: 450px) {
+    #title {
+        font-size: 1.75em;
+    }
+}
+@media screen and (max-width: 375px) {
+    #title {
+        font-size: 1.5em;
+    }
+}
+#title:hover {
+    border-bottom: solid #6994fa 2px;
+    display: inline;
+}
+
+.contentwrapper div {
+    margin: 0.25em;
+}
+.actions {
+    display: flex;
+    
+}
+.actions div:hover {
+    text-decoration: underline;
+    color: #6994fa;
+    cursor: pointer;
+}
+.actions div {
+    margin: 0.25em;
+}
+#links {
+    text-decoration: none;
+    color: black;
+}
+#delete:hover {
+    color: #c40404;
+}
+.actions a:visited {
+    text-decoration: none;
+    color: black;
+    
+}
+.actions p {
+    margin-right: 0.25em;
+    
+}

@@ -1,0 +1,126 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createpost {
+    background-color: #6994fa;
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+    border-radius: 5px;
+    border: solid faf8f2 1px;
+}
+.createpost label {
+    font-size: 1.125em;
+}
+.createpost input {
+    border: solid #faf8f2 2px;
+    font-size: 1.125em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 2.5em;
+    outline: none;
+}
+
+.createpost textarea {
+    border: solid #faf8f2 2px;
+    font-size: 1.125em;
+    border-radius: 5px;
+    background-color: #faf8f2;
+    width: 100%;
+    height: 10em;
+    resize: vertical;
+}
+.formcont {
+    background-color: #6994fa;
+    width: 35em;
+    padding: 2em;
+    border-radius: 5px;
+    border: solid #dce5f5 2px;
+}
+.formcont input {
+    font-size: 1.125em;
+    border: solid #faf8f2 2px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    height: 2.5em;
+    background-color: #faf8f2;
+    width: 100%;
+    outline: none;
+}
+.formcont label {
+    font-size: 1.25em;
+}
+.regcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.regbtn button {
+    padding: 0.5em 1em;
+    border: none;
+}
+.regerror {
+    background-color: #ffcccb;
+    border: solid #ab1e1b 1px;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: #ab1e1b;
+}
+#description {
+    border: solid #faf8f2 2px;
+    font-size: 1.125em;
+    border-radius: 5px;
+    background-color: #faf8f2;
+    width: 100%;
+    height: 4em;
+    resize: vertical;
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .formcont, 
+    .createpost {
+        width: 58%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .formcont, 
+    .createpost {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 479px) {
+    .formcont, 
+    .createpost {
+        width: 70%;
+    }
+    .formcont input, 
+    .createpost input {
+        height: 1.75em;
+    }
+    .formcont label, 
+    .createpost label {
+        font-size: 1.15em;
+    }
+}
+@media screen and (max-width: 373px) {
+    .formcont, 
+    .createpost {
+        width: 70%;
+    }
+    .formcont input, 
+    .createpost input {
+        height: 1.75em;
+    }
+    .formcont label,
+    .createpost label {
+        font-size: 1.15em;
+    }
+}
