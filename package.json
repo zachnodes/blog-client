@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mayersab.github.io/Blogsite",
+  "homepage": "http://zachnodes.github.io/blog-client",
   "proxy": "http://localhost:4001",
   "name": "blog-frontend",
   "version": "0.1.0",
