@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import { useAuthContext } from '../hooks/useAuthContext';
 import { usePostContext } from '../hooks/usePostContext';
 
-const Preview = ({title, descrip, date, slug, postID, userID}) => {
+const Preview = ({title, descrip, date, slug, postID, userID, url}) => {
     const {user} = useAuthContext()
     const {dispatch} = usePostContext()
     const todaysDate = new Date(date).toLocaleDateString()
