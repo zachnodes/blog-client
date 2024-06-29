@@ -1,7 +1,6 @@
 {
-  "homepage": "http://zachnodes.github.io/",
-  "proxy": "http://localhost:4001",
-  "name": "blog-frontend",
+  "homepage": "https://zachnodesblog.onrender.com/",
+  "name": "blog-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
