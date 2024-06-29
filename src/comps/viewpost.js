@@ -12,7 +12,7 @@ const Viewpost = ({url}) => {
   
 
     const getPost = async () => {
-        const res = await fetch(url + '/articles/' + slug)
+        const res = await fetch('/articles/' + slug)
         const json = await res.json()
 
         if (res.ok) {

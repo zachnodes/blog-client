@@ -10,7 +10,7 @@ const Home = ({url}) => {
 
     useEffect(() => {
       const getPosts = async () => {
-        const res = await fetch(url + '/articles')
+        const res = await fetch('/articles')
         const json = await res.json()
         
         if (res.ok) {

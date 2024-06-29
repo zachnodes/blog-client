@@ -8,6 +8,7 @@ import { PostContextProvider } from './context/postscontext';
 
 const siteUrl = process.env.REACT_APP_URL;
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -12,7 +12,7 @@ const Profile = ({url}) => {
     const {username} = useParams()
     useEffect(() => {
       const getPosts = async () => {
-        const res = await fetch(url + '/profile/' + username, {
+        const res = await fetch('/profile/' + username, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`
