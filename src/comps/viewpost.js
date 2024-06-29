@@ -9,10 +9,10 @@ const Viewpost = ({url}) => {
     const [posts, setposts] = useState([]);
     const {slug} = useParams()
     
-  
+  ``
 
     const getPost = async () => {
-        const res = await fetch('/articles/' + slug)
+        const res = await fetch(url + '/articles/' + slug)
         const json = await res.json()
 
         if (res.ok) {
