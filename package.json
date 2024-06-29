@@ -1,5 +1,5 @@
 {
-  "homepage": "http://zachnodes.github.io/blog-client",
+  "homepage": "http://zachnodes.github.io/",
   "proxy": "http://localhost:4001",
   "name": "blog-frontend",
   "version": "0.1.0",
