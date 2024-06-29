@@ -9,7 +9,7 @@ import Newpost from './comps/newpost';
 import Viewpost from './comps/viewpost';
 import Editpost from './comps/editpost';
 import { useAuthContext } from './hooks/useAuthContext';
-
+const siteUrl = process.env.REACT_APP_URL
 
 function App() {
 
@@ -18,13 +18,13 @@ function App() {
     <div className={app.background}>
       <BrowserRouter>
           <Routes>
-              <Route path='/' element={<Home/>} />
-              <Route path='/:username' element={user ? <Profile/> : <Navigate to={'/'}/>}/>
+              <Route path='/' element={<Home url={siteUrl}/>} />
+              <Route path='/:username' element={user ? <Profile url={siteUrl}/> : <Navigate to={'/'}/>}/>
               <Route path='/register' element={user ? <Navigate to={'/'}/> : <Register/>}/>
               <Route path='/signin' element={user ? <Navigate to={'/'}/> : <Signin/>}/>
-              <Route path='/new' element={user ? <Newpost/> : <Navigate to={'/'}/>}/>
-              <Route path='/articles/:slug' element={<Viewpost/>}/>
-              <Route path='/articles/edit/:slug' element={user ? <Editpost/> : <Navigate to={'/'}/>}/>
+              <Route path='/new' element={user ? <Newpost url={siteUrl}/> : <Navigate to={'/'}/>}/>
+              <Route path='/articles/:slug' element={<Viewpost url={siteUrl}/>}/>
+              <Route path='/articles/edit/:slug' element={user ? <Editpost url={siteUrl}/> : <Navigate to={'/'}/>}/>
           </Routes>
       </BrowserRouter>
       </div>

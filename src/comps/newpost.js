@@ -32,7 +32,7 @@ const Newpost = ({url}) => {
 
     const createPost = async () => {
         // must be an authorized request
-        const res = await fetch('/articles/new', {
+        const res = await fetch(url + '/articles/new', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

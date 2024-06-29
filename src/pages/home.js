@@ -10,11 +10,12 @@ const Home = ({url}) => {
 
     useEffect(() => {
       const getPosts = async () => {
-        const res = await fetch('/articles')
+        const res = await fetch(url + '/articles')
         const json = await res.json()
         
         if (res.ok) {
           dispatch({type: 'GET_POSTS', payload: json})
+          
         }
         console.log(json)
       }

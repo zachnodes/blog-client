@@ -11,7 +11,7 @@ const Preview = ({title, descrip, date, slug, postID, userID, url}) => {
     
 
     const delPosts = async () => {
-        const res = await fetch('/profile/' + postID, {
+        const res = await fetch( url + '/profile/' + postID, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
